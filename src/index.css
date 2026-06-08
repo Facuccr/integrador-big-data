@@ -1,0 +1,22 @@
+/* Reseteo global para eliminar bordes laterales */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: none; /* Elimina el límite de ancho que suele poner Vite */
+  margin: 0;
+  padding: 0;
+}
+
+/* Opcional: Reseteo del box-sizing para evitar que los paddings rompan el ancho */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
